@@ -1,0 +1,16 @@
+﻿@model List<Product>
+@{
+}
+
+<h2 class="text-center">Lista</h2>
+
+<a class="btn btn-primary" aps-controller="Products" asp-action="Create">Nowy</a>
+
+
+<tbody>
+	@foreach (var product in Model)
+	{
+		@product.Id
+		@product.Name
+	}
+</tbody>
