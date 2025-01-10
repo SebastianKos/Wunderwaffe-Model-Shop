@@ -16,5 +16,10 @@ namespace Wunderwaffe_Model_Shop.Controllers
 			var products = context.Products.ToList();
 			return View(products);
 		}
-	}
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+    }
 }
